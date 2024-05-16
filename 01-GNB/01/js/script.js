@@ -18,7 +18,7 @@ $(function () {
   });
   //메뉴에 마우스가 나가면
   $menu.on('mouseleave', function () {
-    $submenu.slideUp(duration);
+    $submenu.stop().slideUp(duration);
     $menu.removeClass('on');
   });
 });
