@@ -56,6 +56,7 @@ li {
   top: 50%;
   right: 0;
   transform: translateY(-50%) rotate(135deg);
+  transition: 0.3s;
 }
 
 .answer-wrap {
@@ -64,4 +65,14 @@ li {
   margin-top: 20px;
 
   display: none;
+}
+
+/* 선택한 질문에 대한 디자인 */
+.faq-wrap > ul > li.on > strong {
+  color: #f00;
+}
+
+.faq-wrap > ul > li.on > strong::after {
+  border-color: #f00;
+  transform: translateY(-50%) rotate(315deg);
 }
