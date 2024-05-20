@@ -24,7 +24,6 @@ $(function () {
   // 클릭이벤트
   tabMenu.on('click', function (e) {
     e.preventDefault();
-
     const tabIdx = $(this).index();
     tabAction(tabIdx);
   });
@@ -36,6 +35,9 @@ $(function () {
     tabContent.hide().eq(index).show();
 
     // 배경 이미지 변경
-    body.css('background', `url(../img/${bgArr[index]}) no-repeat 0 0 / cover`);
+    body.css('background', `url(./img/${bgArr[index].bg}) no-repeat 0 0 / cover`);
+
+    // 타이틀 변경
+    tabContent.find('h2').text(bgArr[index].title);
   }
 });
