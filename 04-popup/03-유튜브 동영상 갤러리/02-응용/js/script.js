@@ -70,6 +70,8 @@ $(function () {
     $videoWrap.removeClass('active');
 
     // $video의 src 값을 없애자 --> 동영상 삭제
-    $video.attr('src', '');
+    setTimeout(function () {
+      $video.attr('src', '');
+    }, 300);
   });
 });
