@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fullpage.js 처럼 구성해보기</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- .indicator>button*4>b{section$} -->
+  <div class="indicator">
+    <button type="button"><b>section1</b></button>
+    <button type="button"><b>section2</b></button>
+    <button type="button"><b>section3</b></button>
+    <button type="button"><b>section4</b></button>
+  </div>
+
+  <!-- header#header+main#container+footer#footer -->
+  <header id="header">
+    <div class="inner">
+      <nav>
+        <!-- h1.logo+ul.gnb>li*4>a{MENU$} -->
+        <h1 class="logo">LOGO</h1>
+        <ul class="gnb">
+          <li><a href="#">MENU1</a></li>
+          <li><a href="#">MENU2</a></li>
+          <li><a href="#">MENU3</a></li>
+          <li><a href="#">MENU4</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="container">
+    <!-- section.section$*4>h2+p -->
+    <section class="section1">
+      <h2>section1</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quis accusamus in, aliquam necessitatibus
+        placeat assumenda aperiam et quos nostrum sapiente cum iusto eveniet quas aliquid, cupiditate rerum porro?
+        Soluta vitae assumenda tenetur consequuntur cupiditate ratione provident, culpa labore consectetur tempore!
+        Voluptatem aspernatur sunt vitae eaque odio dolorem necessitatibus praesentium nobis consequatur exercitationem
+        corrupti voluptatibus qui maiores provident sit assumenda perspiciatis, earum tempore facilis vel minima!
+        Libero, consequuntur. Tempore ab unde ad perferendis repellendus veritatis, culpa hic totam recusandae ducimus
+        illum, fuga voluptate natus temporibus beatae laudantium non architecto? Voluptatem doloremque doloribus
+        perspiciatis magni commodi, dicta voluptatum! Porro, aliquid nobis?</p>
+    </section>
+
+    <section class="section2">
+      <h2>section2</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tenetur quae ad voluptatibus harum autem,
+        accusantium repellat dolorum facere ea cupiditate libero, velit est dicta, iste eius numquam assumenda dolorem
+        fugit perferendis soluta officia in nulla perspiciatis. Ducimus similique, incidunt ea est nisi dicta pariatur.
+        Commodi voluptatibus maiores accusamus, eveniet neque quidem. Atque, ducimus. Nesciunt, neque sequi, enim quis
+        molestiae fugit nulla facilis odit eveniet natus ab porro rerum odio voluptate, suscipit quo aliquid illum
+        pariatur ea velit consectetur fuga.</p>
+    </section>
+
+    <section class="section3">
+      <h2>section3</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fuga id error quasi nemo eum possimus nisi
+        eligendi voluptas inventore assumenda esse, laudantium rerum, magni nihil repudiandae voluptate. Natus
+        exercitationem porro doloremque tempora suscipit quas tempore fugiat maxime iure! Ipsum tempore nostrum quam
+        consequatur, minima omnis culpa quo aliquam doloremque consectetur voluptates esse aperiam sunt officiis
+        voluptatem? Culpa, adipisci enim. Molestiae consequatur neque ex inventore sapiente consequuntur voluptate alias
+        libero!</p>
+    </section>
+
+    <section class="section4">
+      <h2>section4</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus ad quisquam molestias deleniti distinctio
+        ullam doloribus veniam esse accusamus, deserunt magnam possimus molestiae beatae tenetur vel eligendi ex
+        doloremque quod voluptatum optio, natus at, dignissimos hic assumenda! Accusantium corrupti, eaque mollitia est
+        possimus cupiditate consectetur et aut explicabo fugiat culpa consequatur officiis vero dicta doloribus delectus
+        sapiente recusandae reprehenderit numquam? Hic, fuga quae enim repellendus debitis maiores autem, accusamus sunt
+        accusantium sequi ea optio, eaque inventore praesentium doloribus. Deleniti, itaque sapiente consequuntur magnam
+        officiis at laudantium quisquam obcaecati. Illum ad tempora mollitia itaque perferendis assumenda commodi sed
+        sunt dolorum voluptates!</p>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+  <button class="btn-top">TOP</button>
+</body>
+
+</html>
