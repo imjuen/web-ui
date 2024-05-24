@@ -89,6 +89,7 @@
       $window.on('wheel', function (e) {
         console.log(e);
         console.log(e).originalEvent.deltaY;
+        // 휠을 올리면 deltaY가 음수로 찍힌다.
 
         if (e.originalEvent.deltaY < 0) {
           // 휠을 올린 상태
