@@ -47,18 +47,32 @@
       // 마우스가 움직이면
       $window.on('mousemove', function (e) {
         console.log(e);
+        // 좌표값 가져와서 x,y 변수에 할당
         x = e.pageX;
         y = e.pageY;
 
+      })
+
+      // 마우스 위치값을 기본으로 해서 어떤 값을 만들자
+      function moving() {
+        // 이게 6만원, 애니메이션 동작 만드는 공식이라고 생각하세요.
+        mx += (x - mx) * speed;
+        my += (y - my) * speed;
+
         // cursor의 좌표값으로 적용
         $cursor.css({
-          left: x,
-          top: y
+          left: mx,
+          top: my
         });
+        // cursor의 좌표값으로 적용
+        $info.html(`x: ${mx}<br>y: ${my}`);
 
-        // ifno 창에 정보 뿌리기
-        $info.html(`x: ${x}<br>y: ${y}`);
-      })
+        // 부드러운 반복
+        requestAnimationFrame(moving);
+      }
+
+      // 함수의 실행 
+      moving();
     })
   </script>
 
