@@ -1,6 +1,11 @@
 $(function () {
+  // AOS.init();
+
   const $header = $('#header');
   const $bgnTOp = $('.btn-top');
+
+  // 각 영역별 aos.js를 적용할 대상
+  const $aniEl = $('[data-aos]');
 
   // 탑버튼이 처음에는 안 보이게
   $bgnTOp.hide();
@@ -33,10 +38,13 @@ $(function () {
       console.log('영역에 진입한 후');
       console.log(anchorkLink, index);
 
-      // 탑버튼 보이게
+      // section4영역에 진입하면 탑버튼 보이게
       if (anchorkLink === 'section4') {
         $bgnTOp.fadeIn();
       }
+
+      AOS.init();
+      $aniEl.addClass('aos-animate');
     },
 
     // 영역에 떠나갈 때
@@ -55,6 +63,8 @@ $(function () {
       if (index === 4 || direction === 'up') {
         $bgnTOp.fadeOut();
       }
+
+      $aniEl.removeClass('aos-animate');
     },
   });
 });
