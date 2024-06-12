@@ -2,16 +2,16 @@ $(function () {
   // AOS.init();
 
   const $header = $('#header');
-  const $bgnTOp = $('.btn-top');
+  const $btnTop = $('.btn-top');
 
   // 각 영역별 aos.js를 적용할 대상
   const $aniEl = $('[data-aos]');
 
   // 탑버튼이 처음에는 안 보이게
-  $bgnTOp.hide();
+  $btnTop.hide();
 
   // 탑버튼 클릭하면 화면 상단으로(첫번쨰 섹션으로 이동)
-  $bgnTOp.on('click', function () {
+  $btnTop.on('click', function () {
     // $.fn.fullpage.moveTo('section1');
     $.fn.fullpage.silentMoveTo('section1');
   });
@@ -40,7 +40,7 @@ $(function () {
 
       // section4영역에 진입하면 탑버튼 보이게
       if (anchorkLink === 'section4') {
-        $bgnTOp.fadeIn();
+        $btnTop.fadeIn();
       }
 
       AOS.init();
